@@ -73,10 +73,22 @@ document.addEventListener('keydown', function(e) {
   if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 'x')) e.preventDefault();
   if (e.key === 'F12') e.preventDefault();
 });
-</script>
+.logo-canto-direito {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 150px; /* aumentei aqui */
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #ff3333;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  z-index: 9999;
+}
+
+</style>
 </head>
 <body>
-
+<img src="https://i.imgur.com/wUNz2C1.png" alt="Logo Oficial" class="logo-canto-direito">
 <h1>📋 Regras de Denúncias</h1>
 
 <div class="block">
