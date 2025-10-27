@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regras de Denúncias</title>
+<style>
+body {
+  background-color: #111;
+  color: #ddd;
+  font-family: 'Courier New', monospace;
+  line-height: 1.5;
+  padding: 30px;
+  user-select: none; /* impede seleção de texto */
+}
+
+h1 {
+  color: #ff4444;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #ff4444;
+  font-weight: bold;
+  margin-top: 40px;
+  border-bottom: 2px solid #ff4444;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #ff4444;
+  margin-top: 20px;
+}
+
+strong {
+  color: #ff6666;
+}
+
+.block {
+  background-color: #1a1a1a;
+  border-left: 4px solid #ff3333;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  white-space: pre-wrap;
+  color: #ccc;
+}
+
+ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+li::before {
+  content: "• ";
+  color: #ff6666;
+}
+
+.observacao {
+  color: #00ff00;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+::selection {
+  background: transparent; /* não destaca nada */
+}
+</style>
+<script>
+document.addEventListener('contextmenu', event => event.preventDefault()); // bloqueia clique direito
+document.addEventListener('keydown', function(e) {
+  if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 'x')) e.preventDefault();
+  if (e.key === 'F12') e.preventDefault();
+});
+</script>
+</head>
+<body>
+
+<h1>📋 Regras de Denúncias</h1>
+
+<div class="block">
+<strong>Atenção:</strong> Qualquer denúncia que infrinja uma das regras abaixo será anulada por estar fora dos padrões.
+</div>
+
+<h2>🧾 Regras Gerais</h2>
+<div class="block">
+<ul>
+  <li>Provas devem ser legítimas, sem cortes ou edições que atrapalhem a análise da staff.</li>
+  <li>Formulário de denúncia deve estar corretamente preenchido, caso contrário será negado.</li>
+  <li>A organização dos envolvidos deve ser citada.</li>
+  <li>Denúncias com mais de <strong>48 horas (2 dias)</strong> da infração serão recusadas.</li>
+  <li>Todo jogador tem o direito de se defender.</li>
+  <li>Não é permitido denunciar em nome de outra pessoa.</li>
+  <li>Apenas o responsável pela denúncia pode decidir se haverá reversão.</li>
+  <li>Somente staff com cargo superior pode modificar uma denúncia.</li>
+  <li>A explicação do motivo do fechamento deve ser postada antes de finalizar o tópico.</li>
+  <li>Após uma equipe iniciar a análise, outra só pode assumir com autorização de um superior.</li>
+</ul>
+</div>
+
+<h2>📁 Especificações por Tipo de Denúncia</h2>
+
+<h3>🔫 DM / Anti-RPG</h3>
+<div class="block">
+É obrigatória 1 imagem do jogador morto no local do crime e 1 imagem do <strong>/vercombates</strong>.<br>
+Em casos de Anti-RPG, é obrigatório mínimo de 2 prints ou 1 vídeo contendo a infração.
+</div>
+
+<h3>🧠 Cheaters</h3>
+<div class="block">
+Somente provas em vídeo são aceitas.<br>
+O vídeo deve ter mínimo de <strong>20 segundos</strong> ou pelo menos 3 clipes.
+</div>
+
+<h3>🧪 Testes e Provas</h3>
+<div class="block">
+Aceitamos apenas arquivos hospedados em: <strong>Imgur, Google Drive, Lightshot (print.sc), YouTube</strong>.
+</div>
+
+<h2>🚫 Condutas Proibidas</h2>
+<div class="block">
+Desrespeito, xingamentos, preconceito ou racismo em sua defesa:<br><br>
+
+<strong>Se for o denunciante:</strong> Denúncia encerrada sem resolução.<br>
+<strong>Se for o acusado:</strong> Denúncia será aceita automaticamente, sem direito à defesa.
+</div>
+
+<h2>🔄 Reversões e Punições</h2>
+<div class="block">
+<ul>
+  <li>Caso o acusado prove que a denúncia é falsa, pode solicitar indenização por reversão.</li>
+  <li>O denunciante será punido com o dobro da indenização concedida ao acusado.</li>
+  <li>Em casos de forja de provas, aplica-se punição de <strong>250 minutos na cadeia administrativa</strong>.</li>
+  <li>Em casos de acordo in-game (negociações para retirada da denúncia):
+    <ul>
+      <li>É permitido negociar com cash/kk.</li>
+      <li>Caso o acordo não seja cumprido, o infrator receberá <strong>300 minutos de cadeia + aviso por "Quebra de Acordo"</strong>.</li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+</body>
+</html>
